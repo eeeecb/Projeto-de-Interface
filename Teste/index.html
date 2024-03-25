@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h2 align="center">Formulário</h2>
+    <br />
+    <!-- Formulario -->
+    <form action="/database.sql" method="post" align="center">
+      <p>
+        Nome: <input type="text" name="Nome" placeholder="Escreva seu nome" />
+      </p>
+      <p>
+        Telefone:
+        <input
+          type="tel"
+          name="Telefone"
+          placeholder="(00)00000-0000"
+          maxlength="14"
+        />
+      </p>
+      <p>Data de Nascimento: <input type="date" name="datanasc" /></p>
+      <p>Senha: <input type="password" name="senha" maxlength="16" /></p>
+      <p>
+        Email: <input type="email" name="email" placeholder="email@email.com" />
+      </p>
+      <p>Idade: <input type="number" name="idade" /></p>
+      <br />
+
+      <!--Estrutura de opções-->
+      <p>
+        Genero: <input type="radio" name="genero" value="masculino" /> Masculino
+        <input type="radio" name="genero" value="feminino" /> Feminino
+        <input type="radio" name="genero" value="outro" /> Outro
+      </p>
+
+      <!--Estrutura de Seleção-->
+      <p>
+        Estado de Nascimento:
+        <select>
+          <option></option>
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+          <option value="GO">Goiás</option>
+          <option value="MA">Maranhão</option>
+          <option value="MT">Mato Grosso</option>
+          <option value="MS">Mato Grosso do Sul</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="PA">Pará</option>
+          <option value="PB">Paraíba</option>
+          <option value="PR">Paraná</option>
+          <option value="PE">Pernambuco</option>
+          <option value="PI">Piauí</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="RN">Rio Grande do Norte</option>
+          <option value="RS">Rio Grande do Sul</option>
+          <option value="RO">Rondônia</option>
+          <option value="RR">Roraima</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+          <option value="SE">Sergipe</option>
+          <option value="TO">Tocantins</option>
+        </select>
+      </p>
+
+      <!--Estrutura de Checkbox-->
+      <p>
+        <input type="checkbox" name="termos" />
+        Eu aceito os termos de serviço.
+      </p>
+      <p>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </p>
+
+      <!--Estrutura Fieldset-->
+      <fieldset>
+        <legend>Dados Pessoais:</legend>
+        <label
+          >Nome: <input type="text" name="Nome" placeholder="Escreva seu nome"
+        /></label>
+        <br />
+        <label
+          >Telefone:
+          <input
+            type="tel"
+            name="Telefone"
+            placeholder="(00)00000-0000"
+            maxlength="14"
+        /></label>
+        <br />
+        <label>Data de Nascimento: <input type="date" name="datanasc" /></label>
+        <br />
+        <label
+          >Senha: <input type="password" name="senha" maxlength="16"
+        /></label>
+        <br />
+        <label
+          >Email:
+          <input type="email" name="email" placeholder="email@email.com"
+        /></label>
+        <br />
+        <label>Idade: <input type="number" name="idade" /></label> <br />
+        <label
+          >Genero:
+          <input type="radio" name="genero" value="masculino" /> Masculino
+          <input type="radio" name="genero" value="feminino" /> Feminino
+          <input type="radio" name="genero" value="outro" /> Outro</label
+        >
+        <br />
+        <label
+          >Estado de Nascimento:
+          <select>
+            <option></option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select></label
+        >
+        <br />
+        <label
+          ><button type="submit">Submit</button>
+          <button type="reset">Reset</button></label
+        >
+        <br />
+      </fieldset>
+    </form>
+  </body>
+</html>
